@@ -215,7 +215,7 @@ nav ul li{
 
 /* ----- RESPONSIVENESS ------ */
 
-@media (max-width: 1024px) {
+@media (max-width: 530px) {
     nav ul{
         display: none;
     }
@@ -248,11 +248,9 @@ nav ul li{
     /* ----- designs ------ */
 
     #designs  .collections .img-container{
-        margin: 0;
-        display: grid;
-        justify-content: space-around;
-        align-items: center;
-        grid-template-columns: 40%;
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
     }
 
     #designs  .collections img{
@@ -261,8 +259,17 @@ nav ul li{
     }
 
     #designs  .collections .img-container .item{
-        height: 390px;
-        width: 300px;
+        height: 310px;
+        width: 220px;
+    }
+
+    #designs  .collections .img-container .item img{
+        height: 150px;
+        width: 120px;
+    }
+
+    #designs  .collections .img-container .item p{
+        font-size: 15px;
     }
 
     #designs  .collections .ds-hl h3{
@@ -294,8 +301,8 @@ nav ul li{
     #designs  #veils .ds-hl img{
         display: block;
         margin: auto;
-        height: 200px;
-        width: 200px;
+        height: 350px;
+        width: 350px;
     }
 }
 
