@@ -215,7 +215,7 @@ nav ul li{
 
 /* ----- RESPONSIVENESS ------ */
 
-@media (max-width: 530px) {
+@media (max-width: 1024px) {
     nav ul{
         display: none;
     }
