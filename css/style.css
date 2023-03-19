@@ -132,13 +132,9 @@ nav ul li{
 
 #footer .holder .contact ul li{
     display: inline;
-    margin: 8px;
-    font-size: 30px;
+    margin: 5px;
+    font-size: 15px;
 }
-
-
-
-
 
 
 
@@ -178,7 +174,7 @@ nav ul li{
 #designs  #veils .ds-hl img{
     margin-left: 30%;
     height: 500px;
-    width: 50px;
+    width: 500px;
 }
 
 /* ----- PRODUCT IMAGES DESIGN ----- */
@@ -217,17 +213,89 @@ nav ul li{
     border-radius: 5px;
 }
 
+/* ----- RESPONSIVENESS ------ */
 
+@media (max-width: 530px) {
+    nav ul{
+        display: none;
+    }
 
+    #headline .hl-content h2{
+        font-size: 46px;
+        color:var(--mid-green);
+        text-shadow: #060a06 -1px 0 4px;
+    }
+    
+    #headline .hl-content p{
+        font-size: 1.1em;
+        color:var(--light-green);
+        text-shadow: #0d250f -1.2px 0 4px;
+        padding-bottom: 20px;
+    }
 
+    #footer .holder h3{
+        font-size: 15px;
+    }
+    
+    #footer .holder ul{
+        font-size: 12px;
+    }
 
+    #footer .holder .ft-cont{
+        margin: 5px;
+    }
+    
+    /* ----- designs ------ */
 
+    #designs  .collections .img-container{
+        margin: 0;
+        display: grid;
+        justify-content: space-around;
+        align-items: center;
+        grid-template-columns: 40%;
+    }
 
+    #designs  .collections img{
+        height: 290px;
+        width: 230px;
+    }
 
+    #designs  .collections .img-container .item{
+        height: 390px;
+        width: 300px;
+    }
 
+    #designs  .collections .ds-hl h3{
+        font-size: 1.5em;
+        margin-left: 10px;
+    }
 
+    #designs  #gowns .ds-hl img{
+        display: block;
+        margin: auto;
+        height: 180px;
+        width: 180px;
+    }
 
-
-
-
+    #designs  #earrings .ds-hl img{
+        display: block;
+        margin: auto;
+        height: 180px;
+        width: 180px;
+    }
+    
+    #designs  #hairpiece .ds-hl img{
+        display: block;
+        margin: auto;
+        height: 150px;
+        width: 180px;
+    }
+    
+    #designs  #veils .ds-hl img{
+        display: block;
+        margin: auto;
+        height: 200px;
+        width: 200px;
+    }
+}
 
