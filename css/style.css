@@ -29,6 +29,10 @@ header{
     align-items: center;
 }
 
+.hamburger{
+    display: none;
+}
+
 nav ul{
     display: inline;
 }
@@ -119,6 +123,11 @@ nav ul li{
     font-size: 20px;
 }
 
+
+#footer .holder .ft-cont{
+    margin: 40px;
+}
+
 #footer .holder ul a{
     transition: 0.5s;
     text-decoration: none;
@@ -137,8 +146,10 @@ nav ul li{
 #footer .holder .contact ul li{
     display: inline;
     margin: 5px;
-    font-size: 15px;
+    font-size: 30px;
 }
+
+
 
 
 
@@ -217,11 +228,144 @@ nav ul li{
     border-radius: 5px;
 }
 
+
+/* ----- ABOUT STYLING ----- */
+
+.about{
+    height: 30%;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.about h3{
+    color: var(--deep-green);
+    font-size: 3em;
+    margin-bottom: 40px;
+}
+
+.about p{
+    display: block;
+    margin: auto;
+    color: var(--deep-green);
+    font-size: 1.5em;
+    width: 80%;
+}
+
+
+/* ----- GET IN TOUCH ----- */
+
+.get-in-touch{
+    height: 30%;
+    text-align: center;
+    margin-top: 5%;
+}
+
+.get-in-touch h3{
+    display: flex;
+    color: #0d250f;
+    font-weight: 600;
+    font-size: 4em;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(180deg, rgba(207, 235, 214, 0.5), rgba(10, 39, 7, 0.4)), url(../media/images/contact\ us.webp);
+    background-size: cover;
+    background-repeat:no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    height: 40vh;
+    flex-direction: row;
+}
+
+.git-main{
+    display: grid;
+    grid-template-columns: 40% 40%;
+    justify-content: center;
+    margin: 50px;
+}
+
+
+.git-container  i{
+    padding: 15px;
+    font-size: 30px;
+    color: #1D3C26;
+    transition: 0.5ms;
+}
+
+.git-container a i:hover{
+    color: #538a4f;
+}
+
+.git-container p{
+    padding: 15px;
+    color: #1D3C26;
+}
+
+.git-container span{
+    padding: 15px;
+    color: #1D3C26;
+}
+
+.git-container ul li{
+    list-style: none;
+}
+
+
+
+
+
+
+
+
+
 /* ----- RESPONSIVENESS ------ */
 
 @media (max-width: 530px) {
-    nav ul{
-        display: none;
+
+    .hamburger{
+        display: block;
+        cursor: pointer;
+        padding-top: 6px;
+    }
+
+    .hamburger .line{
+        width: 30px;
+        height: 3px;
+        background: #fefefe;
+        margin: 6px 0;
+    }
+
+    .nav-bar{
+        height: 0;
+        position: absolute;
+        top: 40px;
+        left: 0;
+        right: 0;
+        width: 100vw;
+        background-color: #0d250f;
+        transition: 0.5s;
+        overflow: hidden;
+    }
+
+    .nav-bar.active{ 
+        height: 450px;
+    }
+
+    .nav-bar ul{
+        display: block;
+        width: fit-content;
+        margin: 80px auto 0 auto;
+        text-align: center;
+        transition: 0.5s;
+        opacity: 0;
+    }
+
+    .nav-bar.active ul{ 
+        opacity: 1;
+    }
+
+    .nav-bar ul a{
+        margin-bottom: 12px;
+        color: red;
     }
 
     #headline .hl-content h2{
@@ -308,5 +452,39 @@ nav ul li{
         height: 350px;
         width: 350px;
     }
+
+    .about{
+        height: 30%;
+        text-align: center;
+        margin-top: 50px;
+    }
+    
+    .about h3{
+        color: var(--deep-green);
+        font-size: 2em;
+        margin-bottom: 40px;
+    }
+    
+    .about p{
+        display: block;
+        margin: auto;
+        color: var(--deep-green);
+        font-size: 1em;
+        width: 80%;
+    }
+
+    .git-main{
+        display: grid;
+        grid-template-columns: 40%;
+    }
+
+    .get-in-touch h3{
+        font-size: 2em;
+    }
+
+    .git-container{
+        text-align: center;
+    }
+    
 }
 
